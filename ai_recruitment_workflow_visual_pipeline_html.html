@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Recruitment Workflow – Visual Pipeline</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 32px 0 8px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: 24px;
+      color: #2563eb;
+    }
+
+    p.subtitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #475569;
+      font-size: 15px;
+    }
+
+    .section {
+      padding: 60px 24px;
+    }
+
+    /* INBOUND SOURCES */
+    .sources {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 28px;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .source-card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 24px 16px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(15,23,42,0.12);
+      animation: floatIn 1s ease forwards;
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .source-card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 25px 60px rgba(56,189,248,0.25);
+    }
+
+    .source-card img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      margin-bottom: 12px;
+    }
+
+    .source-card span {
+      display: block;
+      font-size: 14px;
+      color: #334155;
+    }
+
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* FLOW ARROW */
+    .arrow {
+      text-align: center;
+      font-size: 40px;
+      margin: 48px 0;
+      color: #2563eb;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+
+    /* PIPELINE */
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      max-width: 1500px;
+      margin: auto;
+    }
+
+    .stage {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(15,23,42,0.12);
+      animation: stageIn .8s ease forwards;
+      position: relative;
+    }
+
+    .stage img {
+      width: 36px;
+      height: 36px;
+      margin-bottom: 12px;
+    }
+
+    .stage h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: #2563eb;
+    }
+
+    .stage p {
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    @keyframes stageIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* FINAL GOALS */
+    .goals {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .goal-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 36px 28px;
+      box-shadow: 0 12px 35px rgba(15,23,42,0.14);
+    }
+
+    .goal-card h3 {
+      margin-bottom: 12px;
+      color: #22c55e;
+      font-size: 20px;
+    }
+
+    .goal-card ul {
+      padding-left: 18px;
+      color: #334155;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 16px;
+      font-size: 12px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>AI Recruitment Automation Workflow</h1>
+  <p class="subtitle">AI Agent Building Factors: Inbound Signals • Voice AI • Compliance • Orchestration • Human Control</p>
+  <p class="subtitle">Inbound Leads → AI Qualification → Compliance → Scheduling → Human Decision</p>
+
+  <!-- INBOUND SOURCES -->
+  <div class="section">
+    <h2>Inbound Lead Sources</h2>
+    <p class="subtitle">Every UK hiring channel flows into one AI-driven system</p>
+
+    <div class="sources">
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" /><span>Indeed UK</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" /><span>CV‑Library</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" /><span>Totaljobs</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" /><span>Reed.co.uk</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135793.png" /><span>Adzuna</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135797.png" /><span>Monster UK</span></div>
+
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" /><span>Facebook Ads</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" /><span>Instagram</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" /><span>TikTok</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" /><span>Company Website</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" /><span>Google Search / SEO</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" /><span>Referrals / Word of Mouth</span></div>
+      <div class="source-card"><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" /><span>Phone Calls (VAPI)</span></div>
+    </div>
+  </div>
+  </div>
+
+  <div class="arrow">⬇</div>
+
+  <!-- PIPELINE -->
+  <div class="section">
+    <h2>AI Workflow Pipeline</h2>
+    <p class="subtitle">What happens automatically inside GHL + VAPI</p>
+
+    <div class="pipeline">
+      <div class="stage"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828466.png" /><h3>Lead Normalisation</h3><p>Contacts are created, merged, and tagged correctly in GoHighLevel.</p></div>
+      <div class="stage"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" /><h3>Candidate / Company Classification</h3><p>AI determines intent and routes the lead to the correct flow.</p></div>
+      <div class="stage"><img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" /><h3>GDPR & PECR Consent</h3><p>Consent is checked, captured, or workflow is blocked immediately.</p></div>
+      <div class="stage"><img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" /><h3>AI Voice Calls (VAPI)</h3><p>Human‑like AI calls inbound or outbound to collect structured data.</p></div>
+      <div class="stage"><img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" /><h3>Compliance Validation</h3><p>Right‑to‑work and certifications verified before any progression.</p></div>
+      <div class="stage"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" /><h3>Job Matching</h3><p>Candidates matched against open roles or placed into talent pool.</p></div>
+      <div class="stage"><img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" /><h3>Interview Scheduling</h3><p>Interviews auto‑booked with reminders via SMS, WhatsApp & email.</p></div>
+      <div class="stage"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" /><h3>Human Decision</h3><p>Managers approve placements and handle rates & contracts.</p></div>
+      <div class="stage"><img src="https://cdn-icons-png.flaticon.com/512/942/942799.png" /><h3>Audit & Logging</h3><p>Every action is logged for compliance and reporting.</p></div>
+    </div>
+  </div>
+
+  <!-- FINAL GOALS -->
+  <div class="section">
+    <h2>Final Outcome</h2>
+    <p class="subtitle">Clear value for both candidates and companies</p>
+
+    <div class="goals">
+      <div class="goal-card">
+        <h3>For Candidates</h3>
+        <ul>
+          <li>Fast response via AI calls</li>
+          <li>No repeated questions</li>
+          <li>Clear interview scheduling</li>
+          <li>GDPR‑safe communication</li>
+          <li>Better job matching</li>
+        </ul>
+      </div>
+
+      <div class="goal-card">
+        <h3>For Companies</h3>
+        <ul>
+          <li>Pre‑qualified candidates only</li>
+          <li>Compliance already checked</li>
+          <li>Faster hiring cycles</li>
+          <li>Human control on decisions</li>
+          <li>Full audit trail</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    AI‑powered recruitment system | GoHighLevel + VAPI + Twilio | UK Compliant
+  </footer>
+
+</body>
+</html>
